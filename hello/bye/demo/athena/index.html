@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+    <title>Athena</title>
+    <script type="text/javascript" src="./assets/scripts/vendor/modernizr.min.js"></script>
+    <script type="text/javascript" src="./assets/scripts/vendor/html5shiv.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Rajdhani:500,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon" />
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.6"></script>
+    <script type="text/javascript">
+        google.maps.event.addDomListener(window, 'load', init);
+        function init() {
+            var mapOptions = {
+                zoom: 15,
+                center: new google.maps.LatLng(41.0211229, 29.0437511),
+                scrollwheel: false,
+
+                styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"off"}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#c9323b"}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#c9323b"},{"weight":1.2}]},{"featureType":"administrative.locality","elementType":"geometry.fill","stylers":[{"lightness":"-1"}]},{"featureType":"administrative.neighborhood","elementType":"labels.text.fill","stylers":[{"lightness":"0"},{"saturation":"0"}]},{"featureType":"administrative.neighborhood","elementType":"labels.text.stroke","stylers":[{"weight":"0.01"}]},{"featureType":"administrative.land_parcel","elementType":"labels.text.stroke","stylers":[{"weight":"0.01"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#c9323b"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#99282f"}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#99282f"}]},{"featureType":"road.highway.controlled_access","elementType":"geometry.stroke","stylers":[{"color":"#99282f"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#99282f"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#99282f"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#99282f"}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#090228"}]}]
+            };
+
+            var image = new google.maps.MarkerImage("./assets/images/map-marker@2x.png", null, null, null, new google.maps.Size(24,32));
+
+            var mapElement = document.getElementById('map');
+            var map = new google.maps.Map(mapElement, mapOptions);
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(41.0211229, 29.0437511),
+                map: map,
+                title: 'Athena',
+                icon: image
+            });
+        }
+    </script>
+
+
+
+</head>
+<body id="homepage">
+
+<div id="wrapper" class="wrapper">
+
+    <header id="header" class="header cent-element row">
+        <a class="menu-toggle icon-mobile-menu"></a>
+        <div class="logo-container three-columns pull">
+            <a href="#" class="logo">
+                Athena
+            </a>
+        </div>
+        <nav class="main-nav nine-columns">
+            <a href="#">Home</a>
+            <a href="#About">About</a>
+            <a href="#Whatwedo">What We Do</a>
+            <a href="#Projects">Projects</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+        <a href="#" class="pane-toggle icon-menu one-columns right align-right"></a>
+    </header>
+
+    <div class="content">
+        <div class="cent-element top-area scrollme animateme"
+
+             data-when="enter"
+             data-from="0"
+             data-to="1"
+             data-translatey="100"
+             data-easing="easeinout"
+        >
+            <h1 class="page-title">USER EXPERIENCE DESIGN WEB<br> MOBILE USER INTERFACE</h1>
+            <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor sem at tortor accumsan, id gravida sem vulputate. Integer volutpat vitae diam gravida mollis. </p>
+            <div class="pill"></div>
+        </div>
+        <div class="visual-top scrollme animateme"
+             data-when="enter"
+             data-from="1"
+             data-to="0"
+             data-translatey="100"
+             data-easing="easeinout"
+        >
+            <svg id="polyfill" data-name="polyfill" class="visual-polyfill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2068.4 676.15">
+                <title>Polygon Animation</title>
+
+                <polygon points="900.66 439.12 1062 316.11 1142.67 415.12 1044.42 502.13 900.66 439.12" style="fill: #3d0299"/>
+                <path d="M950.3,592.14L1191.12,587l181.15-3.86L1263.38,460.58,1183,370.12l-0.51.49-117.4,112Z" style="fill: #550299"/>
+                <path d="M1435.56,335.33l183.75-125.15,91.16-62.09-44.75-14L1235.69,0Z" style="fill: #fb90b0"/>
+                <path d="M1142.67,466.12l13.85-31.4,76.13-172.62-122.33-39.86Z" style="fill: #be1fd9"/>
+                <polygon points="1142.67 466.13 878.94 328.11 1119.92 292.11 1142.67 466.13" style="fill: #a510ad"/>
+                <path d="M878.94,328.11l130.31-19L929,38.34l-6.6-22.26Z" style="fill: #f2047d"/>
+                <path d="M714.49,142.09l178.92,87,29-213L776.31,104.62Z" style="fill: #bc72f1"/>
+                <path d="M587.28,403.12L700,295.11l110.66-106-96.18-47-23.12,47.44Z" style="fill: #6c2ef4"/>
+                <path d="M587.28,403.12l232.7,57-68.26-214-83.26,79.5Z" style="fill: #c21bc8"/>
+                <path d="M1573.95,241.1l229.6,39-93.08-132-91.23,62.16Z" style="fill: #ae14c6"/>
+                <path d="M1660.52,482.44l4.35,8.15,27,50.54,111.7-261-229.6-39-0.2.13-30.83,20.87Z" style="fill: #6922f2"/>
+                <path d="M1691.85,541.13l304.4-65.73,15.18-3.28-276.14-36Z" style="fill: #440499"/>
+                <polygon points="2011.43 472.13 2045.56 619.14 1797.34 517.13 2011.43 472.13" style="fill: #4a08ff"/>
+                <path d="M1372.27,583.14l127.72-112c35-30.68,70.39-61.37,105.39-92.05-20.68-39-41.77-78-62.45-117l-107.36,73.22-60.19-20.22Z" style="fill: #c90998"/>
+                <path d="M345.27,559.13l453.61-94.61,21.1-4.4-232.7-57-167.55,108Z" style="fill: #6d1dbe"/>
+                <path d="M345.27,559.13l167.55-108,74.47-48-83.93-53.21L308,226.1Z" style="fill: #760bfd"/>
+                <polygon points="308.04 226.1 97.05 364.12 326.65 391.12 308.04 226.1" style="fill: #8d53ea"/>
+                <path d="M97.05,364.11L241.8,269.43,308,226.1l-307.91-66v69Z" style="fill: #675bfd"/>
+                <polygon points="2045.56 619.14 2068.4 571.13 2068.4 343.11 2011.43 472.13 2045.56 619.14" style="fill: #8d53ea"/>
+                <path d="M1009.25,309.11c36.54-5.33,74.12-11.67,110.66-17-2.85-23.29-6.74-46.57-9.6-69.86,20.09-35.72,40.75-71.16,60.84-106.88-64.81,27-130.19,53.73-195,80.73l21,71C1001.18,280.8,1005.22,295.45,1009.25,309.11Z" style="fill: #8950e9"/>
+                <path d="M785.86,352.11L885.3,370l111.54,20.09-117.9-62,14.48-99-81.7-41-1,1-59,57Z" style="fill: #63089a"/>
+                <path d="M950.3,592.14l48.62-46,46.53-44-144.79-63Z" style="fill: #934de6"/>
+                <path d="M0.13,460.12l96.93-96L31.65,273,0.13,229.1v231Z" style="fill: #7205fb"/>
+                <path d="M1735.29,436.12l217.1-87,37.32-15-186.16-54Z" style="fill: #ae0fbf"/>
+                <polygon points="345.27 559.13 97.05 364.12 326.65 391.12 345.27 559.13" style="fill: #4a08ff"/>
+                <polygon points="124.98 187.1 0.13 22.08 0.13 160.09 124.98 187.1" style="fill: #3d0299"/>
+                <polygon points="922.38 16.08 1171.16 115.36 976.16 196.1 922.38 16.08" style="fill: #c01dd8"/>
+                <path d="M0.13,505.13l345.15,54-98.7-77.55L97.05,364.11l-96.93,96v45Z" style="fill: #3d0299"/>
+                <polygon points="949.27 592.14 1186.11 676.15 1372.27 583.14 949.27 592.14" style="fill: #9609af"/>
+                <path d="M1803.55,280.11l186.16,54-76-124.71-26.39-43.31-28.1,38.25Z" style="fill: #950fb4"/>
+                <path d="M1774,238.21l29.54,41.89,28.1-38.25,55.67-75.76-176.86-18Z" style="fill: #f9137b"/>
+                <polygon points="2068.4 299.11 1735.29 436.12 2011.43 472.13 2068.4 343.11 2068.4 299.11" style="fill: #5f05ff"/>
+                <path d="M1301,288.19c46.07,15.77,88.53,32.39,134.84,47.24C1369.26,223.66,1303.67,111.88,1237,.1c-41.79,74.08-84.62,148.17-126.41,222.25C1173.76,244.3,1237.92,266.25,1301,288.19Z" style="fill: #f61a83"/>
+                <polygon points="1232.65 262.11 1183.01 370.12 1372.27 583.14 1375.37 315.11 1232.65 262.11" style="fill: #6e08bb"/>
+
+            </svg>
+        </div>
+        <div id="About" class="cent-element">
+            <div class="pill"></div>
+            <div class="content-top row tab-view tab-view-hover">
+                <div class="content-left nine-columns">
+                    <div class="content-left-text scrollme animateme"
+                         data-when="enter"
+                         data-from="1"
+                         data-to="0"
+                         data-translatey="100"
+                         data-easing="easeinout"
+                    >
+                        <h2 class="section-title">
+                            USER EXPERIENCE DESIGN<br>
+                            WEB & MOBILE USER<br>
+                            INTERFACE DESIGN_
+                        </h2>
+                        <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor sem at tortor accumsan, id gravida sem vulputate. Integer volutpat vitae diam gravida mollis. Pellentesque fringilla velit sit amet turpis luctus ornare.</p>
+                        <div class="left-list tab-view-buttons">
+                            <a class="tab-view-button current">_ PARLAK İŞ FİKİRLERİ</a>
+                            <a class="tab-view-button">_ PAZAR ARAŞTIRMASI</a>
+                            <a class="tab-view-button">_ ÜRÜN OLUŞTURMA</a>
+                            <a class="tab-view-button">_ ŞİRKETLEŞME ve YATIRIM</a>
+                        </div>
+
+                    </div>
+                    <div class="frame frame1"></div>
+                </div>
+                <!-- TABVIEW 1 -->
+                <div class="content-right nine-columns tab-view-content current">
+                    <div class="tab-text">
+                        <div class="icon-chart"></div>
+                        <h2>PARLAK İŞ FİKİRLERİ</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor sem at tortor accumsan, id gravida sem vulputate. Integer volutpat vitae diam gravida mollis. Pellentesque fringilla velit sit amet
+                            turpis luctus ornare.</p>
+                    </div>
+                    <div class="tab-image">
+                        <img src="./assets/images/market-research@2x.png" alt="Market Research">
+                    </div>
+                </div>
+                <!-- TABVIEW 2 -->
+                <div class="content-right nine-columns tab-view-content">
+                    <div class="tab-text">
+                        <div class="icon-chart"></div>
+                        <h2>PAZAR ARAŞTIRMASI</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor sem at tortor accumsan, id gravida sem vulputate. Integer volutpat vitae diam gravida mollis. Pellentesque fringilla velit sit amet
+                            turpis luctus ornare.</p>
+                    </div>
+                    <div class="tab-image">
+                        <img src="./assets/images/market-research@2x.png" alt="Market Research">
+                    </div>
+                </div>
+                <!-- TABVIEW 3 -->
+                <div class="content-right nine-columns tab-view-content">
+                    <div class="tab-text">
+                        <div class="icon-chart"></div>
+                        <h2>ÜRÜN OLUŞTURMA</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor sem at tortor accumsan, id gravida sem vulputate. Integer volutpat vitae diam gravida mollis. Pellentesque fringilla velit sit amet
+                            turpis luctus ornare.</p>
+                    </div>
+                    <div class="tab-image">
+                        <img src="./assets/images/market-research@2x.png" alt="Market Research">
+                    </div>
+                </div>
+                <!-- TABVIEW 4 -->
+                <div class="content-right nine-columns tab-view-content">
+                    <div class="tab-text">
+                        <div class="icon-chart"></div>
+                        <h2>ŞİRKETLEŞME VE YATIRIM</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor sem at tortor accumsan, id gravida sem vulputate. Integer volutpat vitae diam gravida mollis. Pellentesque fringilla velit sit amet
+                            turpis luctus ornare.</p>
+                    </div>
+                    <div class="tab-image">
+                        <img src="./assets/images/market-research@2x.png" alt="Market Research">
+                    </div>
+                </div>
+                <!-- END TABVIEW -->
+            </div>
+        </div>
+
+        <div class="content-middle">
+            <div class="visual-middle scrollme animateme"
+                 data-when="span"
+                 data-from="0"
+                 data-to="1"
+                 data-translatey="300"
+                 data-easing="easeinout"
+            ><canvas class="lines"></canvas></div>
+            <div id="Whatwedo" class="cent-element">
+                <div class="pill"></div>
+                <div class="what-we-do scrollme animateme"
+                     data-when="span"
+                     data-from="0"
+                     data-to="1"
+                     data-translatey="80"
+                     data-easing="easeinout"
+                >
+                    <div class="what-we-do-text">
+                        <h2 class="section-title">NELER YAPARIZ_</h2>
+                        <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor sem at tortor accumsan, id gravida sem vulputate. Integer volutpat vitae diam gravida mollis. Pellentesque fringilla velit sit amet turpis luctus ornare.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="layer-element">
+                <div class="wwd-area">
+                    <ul class="wwd-list">
+                        <li><a href=""><i class="icon-message"></i><br>FİKİR</a></li>
+                        <li><a href=""><i class="icon-save"></i><br>OYUN</a></li>
+                        <li><a href=""><i class="icon-cloud-up"></i><br>BULUT</a></li>
+                        <li><a href=""><i class="icon-phone"></i><br>MOBİL</a></li>
+                        <li><a href=""><i class="icon-folder"></i><br>BIG DATA</a></li>
+                        <li><a href=""><i class="icon-users"></i><br>YAPAY ZEKA</a></li>
+                    </ul>
+                    <div class="patch patch1"></div>
+                    <div class="patch patch2"></div>
+                </div>
+            </div>
+            <div class="wwd-image scrollme animateme"
+                 data-when="span"
+                 data-from="1"
+                 data-to="0"
+                 data-translatey="100"
+                 data-easing="easeinout"
+            ></div>
+        </div>
+
+        <div id="Projects" class="content-bottom row">
+            <div class="cent-element">
+                <div class="pill"></div>
+                <div class="content-left nine-columns">
+                    <div class="content-left-text scrollme animateme"
+                         data-when="span"
+                         data-from="1"
+                         data-to="0"
+                         data-translatey="40"
+                         data-easing="easeinout"
+                    >
+                        <h2 class="section-title">
+                            PROJELERİMİZ_
+                        </h2>
+                        <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor sem at tortor<br> accumsan, id gravida sem vulputate. Integer volutpat</p>
+                    </div>
+                    <div class="frame frame2"></div>
+                </div>
+            </div>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-controls">
+                        <div class="carousel-buttons">
+                            <a href="#" class="prev icon-arrow-left disabled"></a>
+                            <a href="#" class="next icon-arrow-right"></a>
+                        </div>
+                        <div class="carousel-bullets">
+
+                        </div>
+                    </div>
+                    <div class="carousel-slides">
+                        <div class="carousel-slide current">
+                            <div class="carousel-item">
+                                <img src="./assets/images/projects/bookingboat.png" srcset="./assets/images/projects/bookingboat.png 1x, ./assets/images/projects/bookingboat@2x.png 2x">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/images/projects/bookingboat.png" srcset="./assets/images/projects/bookingboat.png 1x, ./assets/images/projects/bookingboat@2x.png 2x">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/images/projects/bookingboat.png" srcset="./assets/images/projects/bookingboat.png 1x, ./assets/images/projects/bookingboat@2x.png 2x">
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="carousel-item">
+                                <img src="./assets/images/projects/bookingboat.png" srcset="./assets/images/projects/bookingboat.png 1x, ./assets/images/projects/bookingboat@2x.png 2x">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/images/projects/bookingboat.png" srcset="./assets/images/projects/bookingboat.png 1x, ./assets/images/projects/bookingboat@2x.png 2x">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/images/projects/bookingboat.png" srcset="./assets/images/projects/bookingboat.png 1x, ./assets/images/projects/bookingboat@2x.png 2x">
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="carousel-item">
+                                <img src="./assets/images/projects/bookingboat.png" srcset="./assets/images/projects/bookingboat.png 1x, ./assets/images/projects/bookingboat@2x.png 2x">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/images/projects/bookingboat.png" srcset="./assets/images/projects/bookingboat.png 1x, ./assets/images/projects/bookingboat@2x.png 2x">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/images/projects/bookingboat.png" srcset="./assets/images/projects/bookingboat.png 1x, ./assets/images/projects/bookingboat@2x.png 2x">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="last-frame cent-element scrollme animateme"
+         data-when="span"
+         data-from="1"
+         data-to="0"
+         data-translatey="20"
+         data-easing="easeinout"
+    >
+        <div class="pill"></div>
+        <div class="frame frame3"></div>
+    </div>
+    <footer id="Contact" class="footer row">
+        <div class="cent-element footer-content one-half column">
+            <h2 class="section-title">İLETİŞİM_</h2>
+            <p class="subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor sem at tortor accumsan, id gravida sem vulputate. Integer volutpat
+            </p>
+            <div class="visual-bottom">
+                <canvas class="lines2"></canvas>
+            </div>
+        </div>
+        <div class="map one-half column">
+            <div class="google-map">
+                <div id="map"></div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<div class="athena-social as">
+    <header class="as-header">
+        <div class="powered">
+            POWERED BY <span class="publing-logo"></span>
+        </div>
+        <div class="as-hero">
+            <h2 class="section-title">ATHENA SOCIAL_</h2>
+            <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor sem at tortor accumsan, id gravida sem vulputate. Integer volutpat vitae diam gravida mollis. Pellentesque fringilla velit sit amet turpis luctus ornare.</p>
+            <div class="as-frame"></div>
+        </div>
+    </header>
+
+    <section class="as-content cards">
+        <div class="card row">
+            <div class="avatar three-columns pull"><img src="./assets/images/avatar.png" srcset="./assets/images/avatar.png 1x, ./assets/images/avatar@2x.png 2x"></div>
+            <div class="card-content fifteen-columns push">
+                <h3>ATHENA TEKNOLOJİ</h3>
+                <div class="author">athenatech - 23 Dakika önce</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor sem at tortor accumsan, id gravida sem vulputate. Integer volutpat vitae diam gravida mollis. Pellentesque fringilla velit sit amet turpis luctus ornare.</p>
+            </div>
+
+        </div>
+
+        <div class="card row">
+            <div class="avatar three-columns pull"><img src="./assets/images/avatar.png" srcset="./assets/images/avatar.png 1x, ./assets/images/avatar@2x.png 2x"></div>
+            <div class="card-content fifteen-columns push">
+                <h3>ATHENA TEKNOLOJİ</h3>
+                <div class="author">athenatech - 23 Dakika önce</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor sem at tortor accumsan, id gravida sem vulputate. Integer volutpat vitae diam gravida mollis. Pellentesque fringilla velit sit amet turpis luctus ornare.</p>
+                <img src="./assets/images/example.jpg" alt="">
+            </div>
+
+        </div>
+
+        <div class="card row">
+            <div class="avatar three-columns pull"><img src="./assets/images/avatar.png" srcset="./assets/images/avatar.png 1x, ./assets/images/avatar@2x.png 2x"></div>
+            <div class="card-content fifteen-columns push">
+                <h3>ATHENA TEKNOLOJİ</h3>
+                <div class="author">athenatech - 23 Dakika önce</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor sem at tortor accumsan, id gravida sem vulputate. Integer volutpat vitae diam gravida mollis. Pellentesque fringilla velit sit amet turpis luctus ornare.</p>
+            </div>
+
+        </div>
+
+        <div class="card row">
+            <div class="avatar three-columns pull"><img src="./assets/images/avatar.png" srcset="./assets/images/avatar.png 1x, ./assets/images/avatar@2x.png 2x"></div>
+            <div class="card-content fifteen-columns push">
+                <h3>ATHENA TEKNOLOJİ</h3>
+                <div class="author">athenatech - 23 Dakika önce</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor sem at tortor accumsan, id gravida sem vulputate. Integer volutpat vitae diam gravida mollis. Pellentesque fringilla velit sit amet turpis luctus ornare.</p>
+            </div>
+
+        </div>
+
+        <div class="preloader"><img src="./assets/images/preloader.gif" width="32" alt=""></div>
+
+    </section>
+</div>
+
+<script type="text/javascript" src="assets/scripts/all.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/stats.js/r11/Stats.js"></script>
+<script type="text/javascript" src="assets/scripts/canvasLines.js"></script>
+<script>
+    $('.lines').constellation({
+        star: {
+            color: 'rgba(200, 200, 200, .5)',
+            width: 10
+        },
+        line: {
+            color: 'rgba(100, 100, 100, .1)',
+            width: .75
+        },
+        velocity: 0.1,
+        length: 100,
+        distance: 100,
+        radius: 650,
+        width: 500,
+        height: 1200
+    });
+    $('.lines2').constellation({
+        star: {
+            color: 'rgba(200, 200, 200, .5)',
+            width: 10
+        },
+        line: {
+            color: 'rgba(100, 100, 100, .1)',
+            width: 1
+        },
+        velocity: 0.1,
+        length: 50,
+        distance: 50,
+        radius: 150,
+        width: 500,
+        height: 200
+    });
+</script>
+</body>
+</html>
