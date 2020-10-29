@@ -121,7 +121,7 @@ ul {
  }
 
  .ctared:hover{
-   width: 220px;
+   width: 100%;
    height: 60px;
    background-color: #282A31;
    color:  #FF5050;
@@ -148,7 +148,7 @@ ul {
  }
 
  .ctagry:hover{
-   width: 220px;
+   width: 100%;
    height: 60px;
    background-color: #282A31;
    color:  #FF5050;
