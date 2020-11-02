@@ -1,10 +1,10 @@
 html {
   scroll-behavior: smooth;
+
 }
 
 body{
   background-color: #1E2025;
-  margin: auto;
   font-family: 'gilroybold';
   background-image:url('../v6_images/bg.svg');
   background-repeat: no-repeat;
@@ -40,10 +40,12 @@ body{
 
 
 .content{
-  width: 1170px;
-  height: auto;
+  width: 90%;
   margin: auto;
   margin-top: 144px;
+
+
+
 }
 
 .logo{
@@ -166,7 +168,6 @@ ul {
  }
 
  .brands{
-   width: auto;
    height: 364px;
    margin-top: 120px;
    -webkit-transition: all 0.3s;
