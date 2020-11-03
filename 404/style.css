@@ -1,0 +1,115 @@
+html {
+  scroll-behavior: smooth;
+
+}
+
+body{
+  background-color: #1E2025;
+  font-family: 'gilroybold';
+  background-image:url('ufo.svg');
+  background-repeat: no-repeat;
+  background-size: 1050px;
+  background-position-y: 0px;
+  background-position-x: center;
+  height: 100%;
+}
+
+
+@font-face {
+    font-family: 'config_condensedbold';
+    src: url('../v6_style/font/configcondensed-bold-webfont.woff2') format('woff2'),
+         url('../v6_style/font/configcondensed-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'config_condensedregular';
+    src: url('../v6_style/font/configcondensed-regular-webfont.woff2') format('woff2'),
+         url('../v6_style/font/configcondensed-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.content{
+  margin: 30%;
+  margin-top: 600px;
+  text-align: center;
+
+
+
+
+}
+
+  .about{
+    width: auto;
+    height: auto;
+    margin-top: 50px;
+    font-size: 20px;
+    font-family: 'config_condensedregular';
+    color: #CDCDCD;
+    line-height: 30px;
+    font-weight: normal;
+  }
+
+  .ctaarea{
+   margin-top: 30px;
+ }
+
+ .ctared{
+   width: 190px;
+   height: 60px;
+   background-color: #FF5050;
+   color: #fff;
+   border-radius: 6px;
+   -webkit-transition: all 0.3s;
+   font-family: 'config_condensedbold';
+   letter-spacing: 3px;
+   outline: none;
+   font-size: 14px;
+   border: 0px;
+
+ }
+
+ .ctared:hover{
+   width: 220px;
+   height: 60px;
+   background-color: #282A31;
+   color:  #FF5050;
+   -webkit-transition: all 0.3s;
+   cursor:pointer;
+   outline: none;
+ }
+
+
+ .ctagry{
+   width: 190px;
+   height: 60px;
+   background-color: #282A31;
+   color: #F6F6F6;;
+   border-radius: 6px;
+   -webkit-transition: all 0.3s;
+   font-family: 'config_condensedbold';
+   letter-spacing: 3px;
+   outline: none;
+   margin-right: 8px;
+   font-size: 14px;
+   border: 0px;
+
+ }
+
+ .ctagry:hover{
+   width: 220px;
+   height: 60px;
+   background-color: #282A31;
+   color:  #FF5050;
+   -webkit-transition: all 0.3s;
+   cursor:pointer;
+   outline: none;
+ }
