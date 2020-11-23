@@ -53,7 +53,7 @@ padding-right: 70px;
     height:100vh;
     width:100vw;
     margin:auto;
-        background: -webkit-gradient(linear, left top, right bottom, from(#438ee1), to(#973999));
+    background: -webkit-gradient(linear, left top, right bottom, from(#438ee1), to(#973999));
     background: linear-gradient(to bottom right, #FF512F, #DD2476);
 }
 canvas{
@@ -81,14 +81,14 @@ float: left;
 }
 
 iframe {
-    display: block;       
+    display: block;
     background: transparent;
-    border: none;         
-    height: 100vh;        
+    border: none;
+    height: 100vh;
     width: 100vw;
     opacity: 0.9;
     margin-left: -200px;
-    
+
 }
 
 </style>
@@ -124,10 +124,10 @@ iframe {
   </ul>
   <div class="text">UNAPPROVED<br>PERSONAL<br>CASE
     <div class="map"><iframe title="" aria-label="World Symbol map" src="http://datawrapper.dwcdn.net/qng0A/1/" scrolling="no" frameborder="0" style="border: none;" width="709" height="525"></iframe></div>
-  
+
   </div>
-  <div class=info><span>DAYS WITHOUT CORONA COVID-19</span></div>
-  
+  <div class=info><span>TIME IN QUARANTINE</span></div>
+
 <script src="jquery.min.js"></script>
 <script src="jquery.easing.min.js"></script>
 <script id="rendered-js">
@@ -135,7 +135,7 @@ iframe {
  * GLOBAL VARS
  * -------------------------- */
 // The date you want to count down to
-var targetDate = new Date("2019/12/1 00:00:00");
+var targetDate = new Date("2020/3/13 00:00:00");
 
 // Other date related variables
 var days;
@@ -149,7 +149,7 @@ var sec;
 $(function () {
   // Calculate time until launch date
   timeToLaunch();
-  // Transition the current countdown from 0 
+  // Transition the current countdown from 0
   numberTransition('#days .number', days, 1000, 'easeOutQuad');
   numberTransition('#hours .number', hrs, 1000, 'easeOutQuad');
   numberTransition('#minutes .number', min, 1000, 'easeOutQuad');
@@ -159,7 +159,7 @@ $(function () {
 });
 
 /* --------------------------
-     * FIGURE OUT THE AMOUNT OF 
+     * FIGURE OUT THE AMOUNT OF
        TIME LEFT BEFORE LAUNCH
      * -------------------------- */
 function timeToLaunch() {
@@ -184,7 +184,7 @@ function timeToLaunch() {
 }
 
 /* --------------------------
-   * DISPLAY THE CURRENT 
+   * DISPLAY THE CURRENT
      COUNT TO LAUNCH
    * -------------------------- */
 function countDownTimer() {
