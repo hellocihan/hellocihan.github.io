@@ -1,0 +1,236 @@
+body
+{
+	background-color: #151515;
+	margin: 0px;
+	font-family: 'Montserrat', sans-serif;
+	overflow-x: hidden
+}
+
+a
+{
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+.signature
+{
+  width: auto;
+  height: auto;
+  margin-left: 30px;
+  padding-top: 30px;
+
+}
+
+
+ /* PROJECT START */
+
+.project
+{
+  width: 100%;
+  height: auto;
+  float: left;
+
+}
+
+.projecttitle
+{
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+  padding-left: 30px;
+
+}
+
+.prjarea{
+  width: 100%;
+  height: auto;
+  float: left;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  font-family: 'Space Grotesk', sans-serif;
+  color: #fff;
+	-webkit-transition: all 0.3s;
+  border-bottom: 1px solid #202020;
+}
+
+.prjarea:hover{
+	color: #156FFF;
+	-webkit-transition: all 0.3s;
+
+}
+
+
+.projecttitle h1
+{
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 2px;
+
+}
+
+.projecttitle h1:hover
+{
+  color: #156FFF;
+
+
+}
+
+
+
+.projecttitle h2
+{
+  font-size: 14px;
+  font-weight: 700;
+  color: #313131;
+  float: left;
+  line-height: 2px;
+}
+
+/* PROJECT END */
+
+
+
+#wrapper {
+    position: relative;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+	}
+
+	button {
+	    font-size: 14px;
+	    cursor: pointer;
+	    border: none;
+	    -webkit-appearance: none;
+	    -moz-appearance: none;
+	    appearance: none;
+	    -webkit-border-radius: 0;
+	    -moz-border-radius: 0;
+	    border-radius: 0;
+	    -webkit-box-shadow: none;
+	    -moz-box-shadow: none;
+	    box-shadow: none;
+	    font-weight: 700;
+		}
+
+		/* general style for all menus */
+nav.menu {
+    position: fixed;
+    z-index: 20;
+    background-color: #151515;
+    overflow: hidden;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+
+nav.slide-menu-right button.close-menu {
+    background:transparent;
+		position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+
+nav.slide-menu-right button.close-menu img {
+		opacity: 0.5;
+    width:44px;
+    height:44px;
+    position: fixed;
+    right: 30px;
+
+}
+
+
+button.close-menu:focus {
+    outline: none
+}
+
+
+/* slide menu left and right, push menu left and right */
+nav.slide-menu-left,
+nav.slide-menu-right,
+nav.push-menu-left,
+nav.push-menu-right {
+    top: 0;
+    width: 980px;
+    height: 100%;
+}
+
+
+
+nav.slide-menu-left button.close-menu,
+nav.slide-menu-right button.close-menu,
+nav.push-menu-left button.close-menu,
+nav.push-menu-right button.close-menu {
+
+    padding: 15px 30px;
+}
+
+
+
+nav.slide-menu-left,
+nav.push-menu-left {
+    left: 980px;
+}
+
+
+
+nav.slide-menu-right,
+nav.push-menu-right {
+    right: -980px;
+}
+
+
+
+body.sml-open nav.slide-menu-left,
+body.pml-open nav.push-menu-left {
+    left: 0
+}
+
+
+
+body.smr-open nav.slide-menu-right,
+body.pmr-open nav.push-menu-right {
+    right: 0;
+
+    overflow-y:scroll;
+}
+
+
+
+body.pml-open #wrapper {
+    left: 980px;
+}
+
+
+
+body.pmr-open #wrapper {
+    left: 980px;
+}
+
+
+
+.dataImg{
+    margin:0 auto;
+}
+
+
+
+.cime{
+	width: 100%;
+	height: 200px;
+	margin-top: 120px;
+}
