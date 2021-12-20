@@ -1,53 +1,138 @@
 <!DOCTYPE html>
-<html class="no-js" lang="">
-
+<html lang="tr" class="no-js">
 <head>
-<meta property="fb:admins" content="baddua"/>
+<meta property="fb:admins" content="baddua" />
 <meta property="og:title" content="Hellocihan.com" />
-<meta property="og:description" content="I'm UX/UI and Product Designer with 10+ years of experience in digital agencies and corporate companies. For the last 4 years, I’ve been working as a remote UX / UI designer for companies around the world."/>
-<meta property="og:url" content="http://www.hellocihan.com"/>
-<meta property="og:image" content="cihan_og.png"/>
-<meta property="og:type" content="Portfolio"/>
-<meta property="og:site_name" content="Hellocihan.com"/>
+<meta property="og:description" content="I'm UX/UI and Product Designer with 10+ years of experience in digital agencies and corporate companies. For the last 4 years, I’ve been working as a remote UX / UI designer for companies around the world." />
+<meta property="og:url" content="http://www.hellocihan.com" />
+<meta property="og:image" content="cihan_og.png" />
+<meta property="og:type" content="Portfolio" />
+<meta property="og:site_name" content="hellocihan.com" />
 <meta charset="utf-8" />
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <title>HelloCihan</title>
-<link rel="stylesheet" type="text/css" href="v6_style/style.css" media="screen" />
-<link rel="apple-touch-icon" href="v6_style/ico.png">
-<link rel="icon" type="image/png" href="v6_images/icon.png">
-<script type="text/javascript">
-<!--
-if (screen.width <= 699) {
-document.location = "mobile.html";
+<link rel="stylesheet" type="text/css" href="v7_style/style.css" media="screen" />
+<link rel="apple-touch-icon" href="v7_style/ico.png">
+<link rel="icon" type="image/png" href="v7_images/icon.png">
+<script src="https://code.jquery.com/jquery-1.11.2.min.js" > </script>
+<script>
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
 }
-//-->
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
 </script>
 </head>
 <body>
-<div class="kalp"><a href="https://www.instagram.com/p/BwBp0gIACfp/" target="_blank"><img src="v6_images/kalp.svg"></a></div>
-<div class="content">
-<div class="logo"><img src="v6_images/logo.svg"></div>
-<div class="social">
+<nav class="menu slide-menu-right">
+<button class="close-menu"><img src="assets/close.png" srcset="assets/close.png 1x, assets/close@2x.png 2x" ></button>
+<img src="" class="dataImg" />
+<img src="loading.gif" srcset="loading.gif 1x, loading@2x.gif 2x" class="loading" />
+</nav>
+<div id="wrapper">
+<div class="tophero"></div>
+<div class="herosub">
 <ul>
-<li><a href="https://www.linkedin.com/in/cihany/" target="_blank">LINKEDIN</a></li>
-<li><a href="https://dribbble.com/cihanyilmaz" target="_blank">DRIBBBLE</a></li>
-<li><a href="https://www.behance.net/cihanyilmaz_" target="_blank">BEHANCE</a></li>
-<li><a href="https://www.instagram.com/cihanyilmaz_" target="_blank">INSTAGRAM</a></li>
-<li><a href="https://www.protonmarket.com/user/cihanyilmaz" target="_blank">NFTs</a></li>
+<div class="name">Cihan Yılmaz</div>
+<li><a href="https://dribbble.com/cihanyilmaz" target="_blank">dribbble</a></li>
+<li><a href="https://www.behance.net/cihanyilmaz_" target="_blank">behance</a></li>
+<li><a href="https://www.instagram.com/cihanyilmaz_" target="_blank">instagram</a></li>
+<li><a href="https://www.protonmarket.com/user/cihanyilmaz" target="_blank">nft</a></li>
 </ul>
+<div class="herotitle">Hello I’m<br>UI-UX and Product Designer<br>Based in <span>Istanbul</span></div>
+<div class="herotitlesub">I'm UX-UI and Product Designer with 10+ years of experience in digital<br>agencies and corporate companies.</div>
 </div>
-<div class="hero">Hello I’m<br>
-UI-UX and Product Designer <br>
-Based in <span>Istanbul</span></div>
-<div class="about">I'm UX-UI and Product Designer with 10+ years of experience in digital <br>
-agencies and corporate companies.</div>
-<div class="ctaarea">
-<a href="mailto:cihany@gmail.com" target="_blank"><button class="ctagry">SEND MESSAGE</button></a>
-<a href="https://www.hellocihan.com/hello/" target="_blank"><button class="ctared">ALL PROJECTS</button></a>
-<div class="brands"><img src="v6_images/brands.svg"></div
+<div id="wrapper">
+<div class="projects">
+    <a data-href="project/fs.png" href="javascript:;" class="nav-toggler toggle-slide-right"><div class="projectarea"><span>Fuar Sepeti</span></div></a>
+    <a data-href="project/kidzupp.png" href="javascript:;" class="nav-toggler toggle-slide-right"><div class="projectarea"><span>Kidzupp</span></div></a>
+    <a data-href="project/wamo.png" href="javascript:;" class="nav-toggler toggle-slide-right"><div class="projectarea"><span>Wamo</span></div></a>
+    <a data-href="project/13pro.png" href="javascript:;" class="nav-toggler toggle-slide-right"><div class="projectarea"><span>1337Pro</span></div></a>
+    <a data-href="project/di.png" href="javascript:;" class="nav-toggler toggle-slide-right"><div class="projectarea"><span>Deepinfo</span></div></a>
+    <a data-href="project/expedia.png" href="javascript:;" class="nav-toggler toggle-slide-right"><div class="projectarea"><span>Expedia</span></div></a>
+    <a data-href="project/garanti20.png" href="javascript:;" class="nav-toggler toggle-slide-right"><div class="projectarea"><span>Garanti</span></div></a>
+    <a data-href="project/rc.png" href="javascript:;" class="nav-toggler toggle-slide-right"><div class="projectarea"><span>Raccoon</span> </div></a>
+    <a data-href="project/enpara.png" href="javascript:;" class="nav-toggler toggle-slide-right"><div class="projectarea"><span>Enpara Dark Mode </span></div></a>
+    <a data-href="project/yemek.png" href="javascript:;" class="nav-toggler toggle-slide-right"><div class="projectarea"><span>Yemek Sepeti</span></div></a>
+    <a data-href="project/hk.png" href="javascript:;" class="nav-toggler toggle-slide-right"><div class="projectarea"><span>Hangi Kredi </span></div></a>
+    <a data-href="project/b2b_ext.png" href="javascript:;" class="nav-toggler toggle-slide-right"><div class="projectarea"><span>Extranet </span></div></a>
+    <a data-href="project/wamocore.png" href="javascript:;" class="nav-toggler toggle-slide-right"><div class="projectarea"><span>Core Dashboard </span></div></a>
+    <a data-href="project/mess.png" href="javascript:;" class="nav-toggler toggle-slide-right"><div class="projectarea"><span>Mess Avantaj </span></div></a>
+    <a data-href="project/otoso.png" href="javascript:;" class="nav-toggler toggle-slide-right"><div class="projectarea"><span>Oto Solution </span></div></a>
+    <a data-href="project/gferia.png" href="javascript:;" class="nav-toggler toggle-slide-right"><div class="projectarea"><span>Go Feria </span></div></a>
+    <a data-href="project/faceyourself.png" href="javascript:;" class="nav-toggler toggle-slide-right"><div class="projectarea"><span>Face Yourself</span> </div></a>
+    <a data-href="project/tmu.png" href="javascript:;" class="nav-toggler toggle-slide-right"><div class="projectarea"><span>Trust Me Up </span></div></a>
+    <a data-href="project/ltimer.png" href="javascript:;" class="nav-toggler toggle-slide-right"><div class="projectarea"><span>Life Timer</span></div></a>
+    <a data-href="project/stream.png" href="javascript:;" class="nav-toggler toggle-slide-right"><div class="projectarea"><span>Stream Fight</span></div></a>
+    <a data-href="project/mmoney.png" href="javascript:;" class="nav-toggler toggle-slide-right"><div class="projectarea"><span>Sanal Yatırım</span></div></a>
+    <a data-href="project/interval.png" href="javascript:;" class="nav-toggler toggle-slide-right"><div class="projectarea"><span>Interval Timer APP</span></div></a>
+    <a data-href="project/trip.png" href="javascript:;" class="nav-toggler toggle-slide-right"><div class="projectarea"><span>Pygmy Elephant</span></div></a>
+    <a data-href="project/drg.png" href="javascript:;" class="nav-toggler toggle-slide-right"><div class="projectarea"><span>Personal Website</span></div></a>
+    <a data-href="project/tcloud.png" href="javascript:;" class="nav-toggler toggle-slide-right"><div class="projectarea"><span>Turkcell Cloud</span></div></a>
+    <a data-href="project/curationz.png" href="javascript:;" class="nav-toggler toggle-slide-right"><div class="projectarea"><span>Curation Zone</span></div></a>
+    <a data-href="project/aplartform.png" href="javascript:;" class="nav-toggler toggle-slide-right"><div class="projectarea"><span>Assessment Platform</span></div></a>
+    <a data-href="project/humanlab.png" href="javascript:;" class="nav-toggler toggle-slide-right"><div class="projectarea"><span>Humanlab</span></div></a>
+    <a data-href="project/gor.png" href="javascript:;" class="nav-toggler toggle-slide-right"><div class="projectarea"><span>Gordion</span></div></a>
+    <a data-href="project/hertz.png" href="javascript:;" class="nav-toggler toggle-slide-right"><div class="projectarea"><span>Hertz Used Car</span></div></a>
+    <a data-href="project/kuika.png" href="javascript:;" class="nav-toggler toggle-slide-right"><div class="projectarea"><span>Kuika Boost</span></div></a>
+    <a data-href="project/sp.png" href="javascript:;" class="nav-toggler toggle-slide-right"><div class="projectarea"><span>Selfie Points</span></div></a>
+    <a data-href="project/sohub.png" href="javascript:;" class="nav-toggler toggle-slide-right"><div class="projectarea"><span>Shohub</span></div></a>
 </div>
-<div class="cih"><img src="v6_images/symbol.svg"></div>
+</div>
+<div class="experience">
+<div class="experincecon">
+<h1>Scotty</h1>
+<h2>Turkey - Design Lead</h2>
+</div>
+<div class="experincecon">
+<h1>Gordion</h1>
+<h2>Turkey - Product Designer</h2>
+</div>
+<div class="experincecon">
+<h1>Wamo</h1>
+<h2>London - Product Designer</h2>
+</div>
+<br>
+</div>
+<div class="experience">
+<div class="experincecon">
+<h1>Deepinfo</h1>
+<h2>France - Product Designer</h2>
+</div>
+<div class="experincecon">
+<h1>Iconec Wave</h1>
+<h2>Belgium - Product Designer</h2>
+</div>
+<div class="experincecon">
+<h1>Turkcell</h1>
+<h2>Turkey - UX and UI Designer</h2>
+</div>
+<br>
+
+</div>
+<div class="info"><br><br>
+
+<a href="mailto:cihany@gmail.com?subject=Hello Cihan"><button>Send Message</button></a>
+<a href="https://hellocihan.com/hello/"><button class="all">All Projects</button></a>
+</div>
+<div class="flash"><image src="v7_images/flash.svg"></div>
+</div>
+
+
+<script src="js/classie.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/script.js"></script>
+<script>
+$(function(){$(".about").on("click", function(){$("body").removeClass("smr-open");});});
+</script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-65575980-1"></script>
 <script>
@@ -68,11 +153,7 @@ agencies and corporate companies.</div>
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
-</div>
 
-<!-- Cloudflare Web Analytics -->
-<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "8640ba683a90495e8af3af3caaabcc62"}'></script>
-<!-- End Cloudflare Web Analytics -->
 
 </body>
 </html>
