@@ -15,48 +15,99 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <title>Cihan Yılmaz - IBAN</title>
-  <link rel="stylesheet" type="text/css" href="v7_style/style.css" media="screen" />
-	<link rel="apple-touch-icon" href="v6_style/ico.png">
-	<link rel="icon" type="image/png" href="v6_images/icon.png">
+  <link rel="stylesheet" type="text/css" href="v8_style/style.css" media="screen" />
+	<link rel="apple-touch-icon" href="v8_style/ico.png">
+	<link rel="icon" type="image/png" href="v8_images/icon.png">
+
 	<script>
-	function CopyToClipboard(id)
-	{
-	var r = document.createRange();
-	r.selectNode(document.getElementById(id));
-	window.getSelection().removeAllRanges();
-	window.getSelection().addRange(r);
-	document.execCommand('copy');
-	window.getSelection().removeAllRanges();
-	alert("Iban ID Number Copied");
+		function CopyToClipboard(id)
+		{
+		var r = document.createRange();
+		r.selectNode(document.getElementById(id));
+		window.getSelection().removeAllRanges();
+		window.getSelection().addRange(r);
+		document.execCommand('copy');
+		window.getSelection().removeAllRanges();
+		}
+		</script>
+
+<script>
+	function myFunction() {
+	  alert("IBAN Number Copied");
 	}
 	</script>
+
+
+
+	
 </head>
 <body>
 	<div id="iban">
+		<div class="coin"><img src="v8_images/coin.gif"></div>
 
 		
-		<div class="name">GARANTI BANKASI TL</div>
-		<div class="name">TR62 0006 2001 1230 0006 6770 96</div>
-		<button onclick="CopyToClipboard('iban_3');return false;" >COPY IBAN CODE</button>
+		<div class="bank">GARANTI BANKASI TL</div>
+		<div class="ibancode" id="TR62 0006 2001 1230 0006 6770 96">TR62 0006 2001 1230 0006 6770 96</div>
+		<div class="copybutton"><a href="#" onclick="myFunction(); CopyToClipboard('TR62 0006 2001 1230 0006 6770 96');return false; ">COPY IBAN CODE</a></div>
+		<div class="ibansept"></div>
+		</div>
+		<br><br>
+
+
+		<div class="bank">YAPI KREDI BANKASI TL</div>
+		<div class="ibancode" id="TR14 0006 7010 0000 0058 9407 32">TR14 0006 7010 0000 0058 9407 32</div>
+		<div class="copybutton"><a href="#" onclick="myFunction(); CopyToClipboard('TR14 0006 7010 0000 0058 9407 32');return false;">COPY IBAN CODE</a></div>
 		<div class="ibansept"></div>
 		</div>
 		<br><br><br>
+
+
+
+		<div class="bank">GARANTI BANKASI USD</div>
+		<div class="ibancode" id="TR09 0006 2001 2780 0009 0918 96">TR09 0006 2001 2780 0009 0918 96</div>
+		<div class="copybutton"><a href="#" onclick="myFunction(); CopyToClipboard('TR09 0006 2001 2780 0009 0918 96');return false;">COPY IBAN CODE</a></div>
+		<div class="ibansept"></div>
+		</div>
+		<br><br><br>
+
+
+
+		<div class="bank">ENPARA TRY</div>
+		<div class="ibancode" id="TR13 0011 1000 0000 0094 5965 17">TR13 0011 1000 0000 0094 5965 17</div>
+		<div class="copybutton"><a href="#" onclick="myFunction(); CopyToClipboard('TR13 0011 1000 0000 0094 5965 17');return false;">COPY IBAN CODE</a></div>
+		<div class="ibansept"></div>
+		</div>
+		<br><br><br>
+
+
+		<div class="bank">ENPARA USD</div>
+		<div class="ibancode" id="TR33 0011 1000 0000 0101 0845 84">TR33 0011 1000 0000 0101 0845 84</div>
+		<div class="copybutton"><a href="#" onclick="myFunction(); CopyToClipboard('TR33 0011 1000 0000 0101 0845 84');return false;">COPY IBAN CODE</a></div>
+		<div class="ibansept"></div>
+		</div>
+		<br><br><br>
+
+
+
+		<div class="bank">ENPARA EURO</div>
+		<div class="ibancode" id="TR98 0011 1000 0000 0094 5966 36">TR98 0011 1000 0000 0094 5966 36</div>
+		<div class="copybutton"><a href="#" onclick="myFunction(); CopyToClipboard('TR98 0011 1000 0000 0094 5966 36');return false;">COPY IBAN CODE</a></div>
+		<div class="ibansept"></div>
+		</div>
+		<br><br><br>
+
+
+
+
+
+
+
 		
 
 
 </div>
 
-<!-- Hotjar Tracking Code for www.hellocihan.com -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:1222604,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+
 
 </body>
 </html>
