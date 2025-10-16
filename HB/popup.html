@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <title>HB Prompt Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1><img src="logo.png" width="239px" height="28px"></h1>
+        <form id="jsonForm">
+            <div class="form-group">
+                <label for="object">Object</label>
+                <textarea id="object" name="object" rows="3" placeholder="Example: apple, car, house" required></textarea>
+                <span class="clear-icon" id="clearObject">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </span>
+            </div>
+
+            <div class="form-group">
+                <label for="color">Color</label>
+                <textarea id="color" name="color" rows="3" placeholder="Example: red, blue, gradient from yellow to orange"></textarea>
+                <span class="clear-icon" id="clearColor">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </span>
+            </div>
+
+            <div class="form-group">
+                <label for="colorPalette">Color Palette </label>
+                <div class="custom-select">
+                    <select id="colorPalette" name="colorPalette">
+                        <option value="">Select a palette...</option>
+                        <option value="hepsiburada">Hepsiburada</option>
+                        <option value="premium">Premium</option>
+                        <option value="hepsipay">Hepsipay</option>
+                        <option value="success">Success</option>
+                        <option value="error">Error</option>
+                        <option value="warning">Warning</option>
+                        <option value="info">Info</option>
+                        <option value="advertorial">Advertorial</option>
+                    </select>
+                    <span class="clear-icon" id="clearPalette">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </span>
+                    <div class="color-preview" id="colorPreview"></div>
+                </div>
+            </div>
+
+            <button type="submit" id="generateBtn">Generate JSON Code</button>
+        </form>
+        
+        <div class="loading" id="loading">
+            <span class="spinner"></span>
+            <span>Creating JSON code...</span>
+        </div>
+
+        <div class="result" id="result">
+            <div class="result-header">
+                <span>JSON Code<br/><p>You can enter the code you created<br/>as a prompt in <a href="https://sora.com/" target="_blank">* Sora AI → </a></p></span>
+                
+                <button type="button" id="copyBtn" class="copy-btn">Copy</button>
+            </div>
+            <pre id="jsonOutput"></pre>
+            <div class="alert">*Your daily free usage limit for Sora is <span>12 images.</span> Sora renews your limit every 24 hours.</div>
+        </div>
+    </div>
+
+  
+    <script src="counter.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>
